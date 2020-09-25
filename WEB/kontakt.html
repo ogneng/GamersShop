@@ -1,0 +1,90 @@
+<HTML>
+	<HEAD>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<TITLE>Контакт</TITLE>
+	</HEAD>
+
+	<BODY>
+
+	<div class="top">
+		<div id="pomosno3" style="margin-left: 20px;">
+			<applet id="logo" code="Logo.class" style="margin-right: 50px;" >	</applet>
+
+			<a href="html.html"><img id="log"src="images/logo2.jpg" alt="GAMERS SHOP LOGO" style="margin-top: 20px;" ></a>
+
+		</div>
+	<div id="pomosno4">
+		<div id="pomdiv1">
+			<a href="html.html" ><p class="zahover"  >Насловна</p></a>
+			<a href="katalog.html" ><p class="zahover" >Каталог</p></a>
+		</div>
+		<div id="pomdiv2">
+			<a href="registracija.html" ><p class="zahover" >Регистрација</p></a>
+			
+			<a href="zanas.html" ><p class="zahover" >За нас</p><br></a>
+		</div>
+		
+		
+	</div>
+
+	</div>
+
+	
+	<div class="kontakt">
+		<div id="kontakt">
+				<form action="" method="GET" enctype="text/plain">
+					<div class="red">
+						<label for="ime">Вашето име:</label><br />
+						<input id="ime" class="input" name="ime" type="text" value="" size="50" /><br />
+					</div>
+					<div class="red">
+						<label for="subject">Внесете наслов:</label><br />
+						<input id="subject" class="input" name="subject" type="text" value="" size="50" /><br />
+					</div>
+					<div class="red">
+						<label for="poraka">Вашата порака:</label><br />
+						<textarea id="poraka" class="input" name="poraka" rows="13" cols="70"></textarea><br /><br />
+					</div>
+					<input id="submit" type="submit" value="Испрати" />
+				</form>
+		</div>
+
+		<div id="kontakt1">
+				<img src="images/logo3.jpg" width="300" height="250"/><br/>
+				<span>Адреса: Кочо Рацин бр.11 1000 Скопје</span><br/>
+				<span>Тел: +389 78 511 511</span>	<br/>
+				<span>Адреса: Партизанска бр.24 1000 Скопје</span>		<br/>
+				<span></span>Тел: +389 78 522 522<br/>
+				<span></span>E-Mail: gamersshop@gmail.com<br/>
+				<br/>
+				<br/>
+		</div>
+	</div>
+
+	<div class="dole">
+	<br>
+		<span>Огнен Ѓоргиевски  -  135011</span>
+	</div>
+	
+	
+	<script type="text/javascript">
+
+		$(function(){                  
+				 $("#submit").click(function(){              
+				    var ime = $("#ime").val();
+				    var naslov = $("#subject").val();
+				    var poraka = $("#poraka").val();
+				    if(ime.trim().length ==0)
+				   	     alert("Vnesete Ime");
+				    else
+				    	 $("form").attr('action', 'mailto:gamersshop@gmail.com'  + '?subject=' + naslov + '&body=' +   poraka);
+  				});
+		});
+
+	</script>
+</BODY>
+</HTML>

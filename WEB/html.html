@@ -1,0 +1,920 @@
+<HTML>
+	<HEAD>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<TITLE>GAMERS SHOP</TITLE>
+	</HEAD>
+
+	<BODY>
+
+	<div class="top">
+		<div id="des">
+			<applet id="logo" code="Logo.class" >	</applet>
+
+			<a href="html.html"><img id="log"src="images/logo2.jpg" alt="GAMERS SHOP LOGO" ></a>
+
+
+			<div id="pomosno">
+				<input type="text" id="searchTerm" size="60px;" placeholder="Пребарувај..."/>
+				<button id="search" >Пребарувај</button>	
+			</div>
+		</div>
+	<div id="pomosno1">
+		<div id="pomdiv1">
+			<label class="zahover" onclick="VratiNaNaslovna()" id="naslovnl">Насловна</label><br><br>
+			<a href="katalog.html" target="_blank"><label class="zahover" id="naslovnl">Каталог</label></a><br>
+		</div>
+		<div id="pomdiv2">
+			<a href="zanas.html" target="_blank"><label class="zahover" id="naslovnl">За нас</label></a><br><br>
+			<a  href="kontakt.html" target="_balnk" id="naslovnl"><label class="zahover" >Контакт</label></a><br><br>
+			<a href="registracija.html" target="_blank"><label class="zahover" id="naslovnl">Регистрација</label></a><br><br>
+		</div>
+		
+		
+		
+		
+		
+
+	</div>
+
+		<div id="leev">
+			<div style="margin-left: 25px;">
+				<img src="images/najava.png" onclick="Najava()" id="najavaslika" class="zahover">
+				<span id="najava" onclick="Najava()" class="zahover">Најави - се</span><br>
+				<img src="images/korpa.png" class="zahover" onclick="OtvoriKosnicka()">
+				<span id="koshnicka" class="zahover" onclick="OtvoriKosnicka()">Кошничка (<span id="brojaczakosnicka">0</span>)</span><br>
+				<img src="images/heartt - Copy.png" class="zahover" onclick="OtvoriOmileni()">
+				<span id="omilenipr" class="zahover" onclick="OtvoriOmileni()">Омилени продукти (<span id="brojaczaomileni">0</span>)</span>
+			</div>			
+		</div>
+
+		<div class="divzakosnicka">
+			<button id="kupi" onclick="kopche()">Потврда</button>
+			<div class="divzakosnicka2"></div>
+		</div>
+
+		<div class="divzaomileni">
+		</div>
+
+	</div>
+
+	<div class="lev">
+		<h4>Оценете ја нашата страница</h4>
+		<span>(не е задолжително...)</span>
+		<applet id="rate" code="Ocena.class" ></applet>
+	</div>
+
+	
+
+
+	<div class="desen">
+		<div class="global_navigation">
+			<span class="global_nav_button active" id="najp"> НАЈПРОДАВАНИ</span>
+			<span class="global_nav_button" id="najno"> НАЈНОВО</span>
+			<span class="global_nav_button" id="igri"> ИГРИ</span>
+			<span class="global_nav_button" id="pc"> ПЕРСОНАЛНИ КОМП.</span>
+			<span class="global_nav_button" id="laptop"> ЛАПТОПИ</span>
+			<span class="global_nav_button" id="tablet"> ТАБЛЕТИ</span>
+			<span class="global_nav_button" id="oprema"> ОПРЕМА</span>
+			<span class="global_nav_button" id="usb"> USB</span>
+		</div>
+		<div id="glavendiv">                         <!--  // moze da staem i kolku se prodadeni u dolen desen del..   -->      
+			
+			<div class="produkti pcpc najprodavani" id="iMac_2_9GHz">
+				<img src="images/novo.png" class="novo">
+				<img src="images/imac.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >iMac 21.5-inch: 2.9GHz</span><br>
+					<span id="cena">97.999 ден.</span><br><br><br>
+					<span id="dodadi" >Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" onclick="DodadiVoKoshnicka(this)" class="zahover" ><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti pcpc najprodavani" id="Alienware_Area-51_Intel_Core_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/alienwarepc.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Alienware Area-51 Intel® Core™ i7</span><br>
+					<span id="cena">93.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti laptop najprodavani" id="Alienware_13_Gaming">
+				<img src="images/novo.png" class="novo">
+				<img src="images/alienwarelaptop.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Alienware 13 Gaming Laptop</span><br>
+					<span id="cena">85.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti igrii"  id="Dragon_Age_Inquisition">
+				<img src="images/novo.png" class="novo">
+				<img src="images/dragonage.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr">Dragon Age: Inquisition</span><br>
+					<span id="cena">3.999 ден.</span><br><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover"onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti igrii" id="Call_of_Duty_Advanced_Warfare">
+				<img src="images/trans.png" class="transp">
+				<img src="images/cod.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Call of Duty: Advanced Warfare</span><br>
+					<span id="cena">3.499 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti igrii" id="Grand_Theft_Auto_V">
+				<img src="images/trans.png" class="transp">
+				<img src="images/gta5.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Grand Theft Auto V</span><br>
+					<span id="cena">3.499 ден.</span><br><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti igrii" id="Dying_Light">
+				<img src="images/novo.png" class="novo">
+				<img src="images/dyinglight.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Dying Light</span><br>
+					<span id="cena">2.310 ден.</span><br><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti igrii najprodavani" id="World_of_Warcraft_Warlords_of_Draenor">
+				<img src="images/novo.png" class="novo">
+				<img src="images/wow.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >World of Warcraft: Warlords of Draenor</span><br>
+					<span id="cena">2.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+
+
+			<div class="produkti igrii najprodavani" id="Battlefield_4">
+				<img src="images/trans.png" class="transp">
+				<img src="images/Battlefield_4.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Battlefield 4</span><br>
+					<span id="cena">1.499 ден.</span><br><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti igrii" id="The_Elder_Scrolls_V_Skyrim">
+				<img src="images/trans.png" class="transp">
+				<img src="images/skyrim.png" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >The Elder Scrolls V: Skyrim</span><br>
+					<span id="cena">999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti pcpc" id="Dell_Studio_XPS_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/dell-xps-730x-intel-core-i7.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Dell Studio XPS and XPS 730x get Core i7</span><br>
+					<span id="cena">73.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+
+			<div class="produkti laptop" id="Apple_MacBook_Pro_Intel_Core_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/imaclap.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Apple MacBook Pro Intel Core i7 2.2GHz</span><br>
+					<span id="cena">81.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti pcpc" id="Asus_Desktop_Intel_Core_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/asuspc.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Asus Desktop Intel Core i7</span><br>
+					<span id="cena">49.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti pcpc" id="Lenovo_Erazer_X700_Gaming_Desktop_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/lenovopc.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Lenovo Erazer X700 Gaming Desktop i7</span><br>
+					<span id="cena">65.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti laptop" id="Lenovo_Z50_Core_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/lenovo-z50.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Lenovo Z50 Core i7</span><br>
+					<span id="cena">29.999 ден.</span><br><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti laptop" id="Asus_15_6_Touch-Screen_Intel_Core_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/asuslap.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Asus 15.6" Touch-Screen Intel Core i7</span><br>
+					<span id="cena">37.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+			
+			<div class="produkti laptop" id="HP_ENVY_17_3_Touch-Screen_Intel_Core_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/hplap.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >HP ENVY 17.3" Touch-Screen Intel Core i7</span><br>
+					<span id="cena">35.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti laptop" id="Acer_Aspire_E1_572_4th_Gen_Core_i7">
+				<img src="images/trans.png" class="transp">
+				<img src="images/acer.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Acer Aspire E1-572 4th Gen Core i7</span><br>
+					<span id="cena">31.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti usb" id="PNY_Turbo_Plus_64GB_USB_3_0">
+				<img src="images/trans.png" class="transp">
+				<img src="images/usb1.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >PNY Turbo Plus 64GB USB 3.0</span><br>
+					<span id="cena">5.499 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+			<div class="produkti usb najprodavani" id="PNY_Turbo_Plus_128GB_USB_3_0">
+				<img src="images/novo.png" class="novo">
+				<img src="images/usb2.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >PNY Turbo Plus 128GB USB 3.0 </span><br>
+					<span id="cena">8.499 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+			<div class="produkti tablet najprodavani" id="Samsung_Galaxy_Tab_4_10_1_16GB">
+				<img src="images/trans.png" class="transp">
+				<img src="images/samstab.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Samsung Galaxy Tab 4 10.1 16GB </span><br>
+					<span id="cena">16.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+			<div class="produkti tablet" id="Apple_iPad_Air_2_Wi-Fi_64GB">
+				<img src="images/novo.png" class="novo">
+				<img src="images/ipad.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Apple® - iPad Air 2 Wi-Fi 64GB </span><br>
+					<span id="cena">25.499 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+			<div class="produkti oprema" id="Razer_Kraken_Pro">
+				<img src="images/trans.png" class="transp">
+				<img src="images/razerkr.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Razer Kraken Pro</span><br>
+					<span id="cena">5.499 ден.</span><br><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+			<div class="produkti oprema" id="Razer_Electra">
+				<img src="images/trans.png" class="transp">
+				<img src="images/razerel.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Razer Electra</span><br>
+					<span id="cena">4.499 ден.</span><br><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti oprema najprodavani" id="Razer_BlackWidow_Keyboard">
+				<img src="images/trans.png" class="transp">
+				<img src="images/keyboard.jpg" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Razer BlackWidow Keyboard</span><br>
+					<span id="cena">5.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+			<div class="produkti oprema" id="Razer_Ouroboros">
+				<img src="images/trans.png" class="transp">
+				<img src="images/mouse.png" class="slikip">
+				<div class="podatoci">
+					<span class="imepr" >Razer Ouroboros</span><br>
+					<span id="cena">7.999 ден.</span><br><br>
+					<span id="dodadi">Додади во кошничка</span>
+					<img src="images/korpa.png" id="korpa" class="zahover" onclick="DodadiVoKoshnicka(this)"><br><br>
+					<span id="omileni">Додади во омилени</span>
+					<img src="images/heartt.jpg" id="prazno" class="zahover" onclick="DodadiVoOmileni(this)">
+				</div>
+			</div>
+
+	</div>
+
+	<div class="dole">
+	<br>
+		<span>Огнен Ѓоргиевски  -  135011</span>
+	</div>
+
+	<div class="najava_dialog" title="Најава">
+		<span id="Korimee">Корисничко име: </span></br>
+		<input type="text" id="korime"/>
+		<span>Лозинка: </span></br>
+		<input type="password" id="lozinka"/>
+	</div>
+	
+	<div id="porakaZaKosnicka" class="poraki">
+		<span>Успешно додадовте продукт во кошничката.</span>
+	</div>
+
+	<div id="porakaZaOmileni" class="poraki">
+		<span>Успешно додадовте омилен продукт.</span>
+	</div>
+	<div id="porakaZaOmileni2" class="poraki">
+		<span>Продуктот е веќе во омилени.</span>
+	</div>
+	
+	<script>
+
+	//data za autocomplete
+	var data=[ "World_of_Warcraft_Warlords_of_Draenor","Dying_Light","Battlefield_4","Dragon_Age_Inquisition","Grand_Theft_Auto_V","The_Elder_Scrolls_V_Skyrim","Call_of_Duty_Advanced_Warfare","Dell_Studio_XPS_i7","Alienware_13_Gaming","Apple_MacBook_Pro_Intel_Core_i7","iMac_2_9GHz","Alienware_Area-51_Intel_Core_i7","Asus_Desktop_Intel_Core_i7","Lenovo_Erazer_X700_Gaming_Desktop_i7","Lenovo_Z50_Core_i7","Asus_15_6_Touch-Screen_Intel_Core_i7","HP_ENVY_17_3_Touch-Screen_Intel_Core_i7","Acer_Aspire_E1_572_4th_Gen_Core_i7","PNY_Turbo_Plus_64GB_USB_3_0","PNY_Turbo_Plus_128GB_USB_3_0","Samsung_Galaxy_Tab_4_10_1_16GB","Apple_iPad_Air_2_Wi-Fi_64GB","Razer_Kraken_Pro","Razer_Electra","Razer_BlackWidow_Keyboard","Razer_Ouroboros"];
+
+	//search
+	function search(vlez){
+		$(".igrii").hide();
+		$(".pcpc").hide();
+		$(".laptop").hide();
+		$(".tablet").hide();
+		$(".usb").hide();
+		$(".oprema").hide();
+		$("#"+vlez+"").show();
+	}
+
+	//kupuvanje naelementite
+	function kopche(){
+		if( $('.divzakosnicka2').is(':empty') ) {
+			alert("Немате изберено ниеден прозивод.");
+		}
+		else{brojaczakosnicka
+			$("#brojaczakosnicka").html("0");
+			$(".divzakosnicka2").empty();
+			alert("Успешно извршено купување.");
+		}
+	}
+
+	//najava
+	function Najava(){
+		if($("#najava").html()=="Најави - се"){
+			$(".najava_dialog").dialog("open");
+
+		}
+		else if ($("#najava").html()=="Одјави - се")
+			$("#Korimee").html("");
+			$("#najava").html("Најави - се");
+			$("#najavaslika").attr("src","images/najava.png");
+			proveriKolace2();
+	}
+
+	//broj
+	function broj(j){
+ 		var m = parseInt(j.text(),10);
+
+ 		j.text(m+1);
+	}
+	function broj1(j){
+ 		var m = parseInt(j.text(),10);
+
+ 		j.text(m-1);
+	}
+
+	//koga se otvara kosnickata
+	function OtvoriKosnicka(){
+		
+		$(".divzakosnicka").show();
+		$(".divzaomileni").hide();
+		$(".desen").hide();
+
+		//site da se gledat
+		$(".najno").show();
+		$(".igrii").show();
+		$(".pcpc").show();
+		$(".laptop").show();
+		$(".tablet").show();
+		$(".usb").show();
+		$(".oprema").show();
+		$(".novo").parent().show();
+
+		$(".zahover").hover(function() {
+		    $(this).css('cursor','pointer');
+		}, function() {
+		    $(this).css('cursor','auto');
+		});
+	}
+
+	//vo kosnickata koga se brishe elemnt
+	function Izbrishi1(e){
+		$(e).parent().parent().remove();
+		broj1($("#brojaczakosnicka"));
+	}
+	function Izbrishi2(e){
+		$(e).parent().parent().remove();
+		broj1($("#brojaczaomileni"));
+		var m =$(e).parent().parent().attr("id");
+		var n = m.toString();
+		console.log(n);
+		brishiSlika(n);
+	}
+	function brishiSlika(e){
+		$("div > img","#"+e).last().attr("src","images/heartt.jpg");
+	}
+
+	//otvori na omileni predmeti
+	function OtvoriOmileni(){
+
+		
+
+		$(".divzaomileni").show();
+		$(".desen").hide();
+		$(".divzakosnicka").hide();
+
+		//site da se gledat
+		$(".najno").show();
+		$(".igrii").show();
+		$(".pcpc").show();
+		$(".laptop").show();
+		$(".tablet").show();
+		$(".usb").show();
+		$(".oprema").show();
+		$(".novo").parent().show();
+
+		
+		$(".zahover").hover(function() {
+		    $(this).css('cursor','pointer');
+		}, function() {
+		    $(this).css('cursor','auto');
+		});
+	}
+
+	//prikazuvanje poraka za kosnicka
+	function prikaziPoraka1(){
+			$("#porakaZaKosnicka").stop().animate({top: 50}, "slow").delay(1000).animate({top: -50}, "fast");
+	}
+	function prikaziPoraka2(){
+			$("#porakaZaOmileni").stop().animate({top: 50}, "slow").delay(1000).animate({top: -50}, "fast");
+	}
+	function prikaziPoraka3(){
+			$("#porakaZaOmileni2").stop().animate({top: 50}, "slow").delay(1000).animate({top: -50}, "fast");
+	}
+
+	//dodavanje vo kosnicka
+	function DodadiVoKoshnicka(e){
+		prikaziPoraka1();
+
+		broj($("#brojaczakosnicka")); 
+
+		$(".divzakosnicka2").append( $(e).parent().parent().clone() );
+
+		$("div > div", ".divzakosnicka2").remove();
+
+		$('.divzakosnicka2 > div').append('<div class="checkout"><img src="images/n	o.png" id="no" class="zahover" style="margin-left: 55px;margin-top: 39px;" onclick="Izbrishi1(this)"></div>');
+	}
+	function DodadiVoKoshnicka1(e){
+		$(".divzakosnicka2").append( $(e).parent().parent().clone() );
+
+		broj($("#brojaczakosnicka")); 
+
+		$("div > div", ".divzakosnicka2").remove();
+
+		$('.divzakosnicka2 > div').append('<div class="checkout"><img src="images/n	o.png" id="no" class="zahover" style="margin-left: 55px;margin-top: 39px;" onclick="Izbrishi1(this)"></div>');
+		$(e).parent().parent().remove();
+		Izbrishi2(e);
+	}
+
+	//dodadi voomineli
+	function DodadiVoOmileni(e){
+
+
+		if($(e).attr("src") == "images/heartt.jpg"){
+
+		prikaziPoraka2()
+
+		broj($("#brojaczaomileni"));
+
+		$(e).attr("src","images/heartt - Copy.png");
+		$(".divzaomileni").append( $(e).parent().parent().clone() );
+
+		$("div > div", ".divzaomileni").remove();
+
+		$('.divzaomileni > div').append('<div class="checkout"><img src="images/korpa.png" id="iconi" class="zahover" style="margin-left: 43px;margin-top: 39px;" onclick="DodadiVoKoshnicka1(this)" ><img src="images/n	o.png" id="no" class="zahover" onclick="Izbrishi2(this)" style="margin-top: 39px;""></div>');
+		} else {
+			prikaziPoraka3()
+		}
+	}
+	//vrati na naslovna
+	function VratiNaNaslovna(){
+		$(".divzaomileni").hide();
+		$(".divzakosnicka").hide();
+		$(".desen").show();
+
+		$(".igrii").hide();
+		$(".pcpc").hide();
+		$(".laptop").hide();
+		$(".tablet").hide();
+		$(".usb").hide();
+		$(".oprema").hide();
+		$(".novo").parent().show();
+
+		$("#najp").trigger( "click" );
+	}
+	//cookies
+
+		function postaviKolace(Ime, Vrednost, t) {
+		    var d = new Date();
+		    d.setTime(d.getTime() + (t*24*60*60*1000));
+		    var istekuva = "istekuva="+d.toUTCString();
+		    document.cookie = Ime + "=" + Vrednost + "; " + istekuva;
+		}
+
+		function zemiKolace(Ime) {
+		    var imee = Ime + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i=0; i<ca.length; i++) {
+		        var c = ca[i];
+		        while (c.charAt(0)==' ') c = c.substring(1);
+		        if (c.indexOf(imee) == 0) 
+		        	return c.substring(imee.length, c.length);
+		    }
+		    return "";
+		}
+
+		function proveriKolace() {
+			var korisnik = zemiKolace("korisnickoIme");
+			if (korisnik != "") {
+				$("#najava").html("Одјави - се");
+				$("#najavaslika").attr("src","images/odjava.png");
+				//$("#najava").html("Добродојде " + korisnik);
+			} else {
+				korisnik = $("#Korimee").html();
+				if (korisnik != "" && korisnik != null) {
+					postaviKolace("korisnickoIme", korisnik, 365);
+					$("#najava").html("Одјави - се");
+					$("#najavaslika").attr("src","images/odjava.png");
+					//$("#najava").html("Добродојде " + korisnik);
+				}
+			}
+		}
+		function proveriKolace2() {
+			var korisnik = zemiKolace("korisnickoIme");
+			if (korisnik != "") {
+				$("#najava").html("Најави - се");
+				$("#najavaslika").attr("src","images/najava.png");
+				//$("#najava").html("Добродојде " + korisnik);
+			} else {
+				korisnik = $("#Korimee").html();
+				if (korisnik != "" && korisnik != null) {
+					postaviKolace("korisnickoIme", korisnik, 365);
+					$("#najava").html("Најави - се");
+					$("#najavaslika").attr("src","images/najava.png");
+					//$("#najava").html("Добродојде " + korisnik);
+				}
+			}
+		}
+
+	$(function(){
+
+		if(zemiKolace("korisnickoIme") != ""){
+			proveriKolace();
+		}else{
+			proveriKolace2();
+		}
+
+
+		$(".divzaomileni").hide();
+		$(".divzakosnicka").hide();
+
+		
+
+
+		var brvokoshnicka = 0;
+		var brvoomileni = 0;
+		//globalna navigacija
+
+		$(".igrii").hide();
+		$(".pcpc").hide();
+		$(".laptop").hide();
+		$(".tablet").hide();
+		$(".usb").hide();
+		$(".oprema").hide();
+		$(".najprodavani").show();
+		//$(".novo").parent().show();
+
+		$("#najno").click(function(){
+				$(this).removeClass().addClass("global_nav_button active");
+				$("#igri").removeClass().addClass("global_nav_button");
+				$("#najp").removeClass().addClass("global_nav_button");
+				$("#pc").removeClass().addClass("global_nav_button");
+				$("#laptop").removeClass().addClass("global_nav_button");
+				$("#tablet").removeClass().addClass("global_nav_button");
+				$("#oprema").removeClass().addClass("global_nav_button");
+				$("#usb").removeClass().addClass("global_nav_button");
+				
+				$(".igrii").hide();
+				$(".pcpc").hide();
+				$(".laptop").hide();
+				$(".tablet").hide();
+				$(".usb").hide();
+				$(".oprema").hide();
+				$(".novo").parent().show();			
+		});
+
+		$("#najp").click(function(){
+				$(this).removeClass().addClass("global_nav_button active");
+				$("#igri").removeClass().addClass("global_nav_button");
+				$("#najno").removeClass().addClass("global_nav_button");
+				$("#pc").removeClass().addClass("global_nav_button");
+				$("#laptop").removeClass().addClass("global_nav_button");
+				$("#tablet").removeClass().addClass("global_nav_button");
+				$("#oprema").removeClass().addClass("global_nav_button");
+				$("#usb").removeClass().addClass("global_nav_button");
+				
+				$(".igrii").hide();
+				$(".pcpc").hide();
+				$(".laptop").hide();
+				$(".tablet").hide();
+				$(".usb").hide();
+				$(".oprema").hide();
+				$(".najprodavani").show();
+		});
+
+		$("#igri").click(function(){
+				$(this).removeClass().addClass("global_nav_button active");
+				$("#najno").removeClass().addClass("global_nav_button");
+				$("#najp").removeClass().addClass("global_nav_button");
+				$("#pc").removeClass().addClass("global_nav_button");
+				$("#laptop").removeClass().addClass("global_nav_button");
+				$("#tablet").removeClass().addClass("global_nav_button");
+				$("#oprema").removeClass().addClass("global_nav_button");
+				$("#usb").removeClass().addClass("global_nav_button");
+				
+				$(".igrii").show();
+				$(".pcpc").hide();
+				$(".laptop").hide();
+				$(".tablet").hide();
+				$(".usb").hide();
+				$(".oprema").hide();
+		});
+
+		$("#pc").click(function(){
+				$(this).removeClass().addClass("global_nav_button active");
+				$("#najno").removeClass().addClass("global_nav_button");
+				$("#najp").removeClass().addClass("global_nav_button");
+				$("#igri").removeClass().addClass("global_nav_button");
+				$("#laptop").removeClass().addClass("global_nav_button");
+				$("#tablet").removeClass().addClass("global_nav_button");
+				$("#oprema").removeClass().addClass("global_nav_button");
+				$("#usb").removeClass().addClass("global_nav_button");
+				
+				$(".pcpc").show();
+				$(".igrii").hide();
+				$(".laptop").hide();
+				$(".tablet").hide();
+				$(".usb").hide();
+				$(".oprema").hide();
+		});
+
+		$("#laptop").click(function(){
+				$(this).removeClass().addClass("global_nav_button active");
+				$("#najno").removeClass().addClass("global_nav_button");
+				$("#najp").removeClass().addClass("global_nav_button");
+				$("#igri").removeClass().addClass("global_nav_button");
+				$("#pc").removeClass().addClass("global_nav_button");
+				$("#tablet").removeClass().addClass("global_nav_button");
+				$("#oprema").removeClass().addClass("global_nav_button");
+				$("#usb").removeClass().addClass("global_nav_button");
+				
+				$(".laptop").show();
+				$(".igrii").hide();
+				$(".pcpc").hide();
+				$(".tablet").hide();
+				$(".usb").hide();
+				$(".oprema").hide();
+		});
+
+		$("#tablet").click(function(){
+				$(this).removeClass().addClass("global_nav_button active");
+				$("#najno").removeClass().addClass("global_nav_button");
+				$("#najp").removeClass().addClass("global_nav_button");
+				$("#igri").removeClass().addClass("global_nav_button");
+				$("#pc").removeClass().addClass("global_nav_button");
+				$("#laptop").removeClass().addClass("global_nav_button");
+				$("#oprema").removeClass().addClass("global_nav_button");
+				$("#usb").removeClass().addClass("global_nav_button");
+				
+				$(".tablet").show();
+				$(".igrii").hide();
+				$(".pcpc").hide();
+				$(".laptop").hide();
+				$(".usb").hide();
+				$(".oprema").hide();
+		});
+
+		$("#oprema").click(function(){
+				$(this).removeClass().addClass("global_nav_button active");
+				$("#najno").removeClass().addClass("global_nav_button");
+				$("#najp").removeClass().addClass("global_nav_button");
+				$("#igri").removeClass().addClass("global_nav_button");
+				$("#pc").removeClass().addClass("global_nav_button");
+				$("#laptop").removeClass().addClass("global_nav_button");
+				$("#tablet").removeClass().addClass("global_nav_button");
+				$("#usb").removeClass().addClass("global_nav_button");
+				
+				$(".oprema").show();
+				$(".igrii").hide();
+				$(".pcpc").hide();
+				$(".laptop").hide();
+				$(".usb").hide();
+				$(".tablet").hide();
+		});
+
+		$("#usb").click(function(){
+				$(this).removeClass().addClass("global_nav_button active");
+				$("#najno").removeClass().addClass("global_nav_button");
+				$("#najp").removeClass().addClass("global_nav_button");
+				$("#igri").removeClass().addClass("global_nav_button");
+				$("#pc").removeClass().addClass("global_nav_button");
+				$("#laptop").removeClass().addClass("global_nav_button");
+				$("#tablet").removeClass().addClass("global_nav_button");
+				$("#oprema").removeClass().addClass("global_nav_button");
+				
+				$(".usb").show();
+				$(".igrii").hide();
+				$(".pcpc").hide();
+				$(".laptop").hide();
+				$(".oprema").hide();
+				$(".tablet").hide();
+		});
+
+
+
+
+		//autocomplete
+		$("#searchTerm").autocomplete({
+			source:data
+		});
+
+		// ajax search
+		$("#search").click(function(){
+			search($("#searchTerm").val());
+		});
+
+
+		//najava dialog
+		$(".najava_dialog").dialog({
+				closeOnEscape:false,
+				autoOpen:false,
+				modal:true,
+				buttons:{
+					Najava:function(){
+						if($("#korime").val().length>0 && $("#lozinka").val().length>0){
+							$(".najava_dialog").dialog("close");
+							alert("Успешна најава!");
+							proveriKolace();
+							$("#najava").html("Одјави - се");
+							$("#najavaslika").attr("src","images/odjava.png");
+						}
+					},
+					Otkazi:function(){
+						$(".najava_dialog").dialog("close");
+					}
+				}
+			});
+
+		// coursor hover
+		$(".zahover").hover(function() {
+		    $(this).css('cursor','pointer');
+		}, function() {
+		    $(this).css('cursor','auto');
+		});
+
+
+		$("#dodadi").click(function() {
+
+		});
+
+		
+
+	});
+
+	</script>
+</BODY>
+</HTML>

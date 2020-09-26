@@ -1,7 +1,10 @@
 # GamersShop
 My first JavaScript and jQuery project in second year of study at FINKI.
 
-How to open: First download the whole project. Then extract. Go to WEB folder, and open html.html in browser.
+How to open:
+First download the whole project.
+Then extract.
+Go to WEB folder, and open html.html in browser.
 
 This project is purely JavaScript and jQuary, it has 5 pages but only 2 have functionalities on them.
 

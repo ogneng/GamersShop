@@ -2,9 +2,9 @@
 My first JavaScript and jQuery project in second year of study at FINKI.
 
 How to open:</br>
-First download the whole project.</br>
-Then extract.</br>
-Go to WEB folder, and open html.html in browser.</br>
+•First download the whole project.</br>
+•Then extract.</br>
+•Go to WEB folder, and open html.html in browser.</br>
 
 This project is purely JavaScript and jQuary, it has 5 pages but only 2 have functionalities on them.</br>
 
